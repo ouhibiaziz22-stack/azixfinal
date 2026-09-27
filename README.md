@@ -57,7 +57,7 @@ update public.profiles set role = 'admin' where email = 'you@example.com';
 
 ## Deploy (Vercel)
 
-1. Import the repo and set **Root Directory** to `produina` (the Git repo starts one folder up).
+1. Import the repo. If the Vercel project uses the repository root, leave **Root Directory** empty. If it uses `frontend`, the app includes a Vercel config for that directory as well.
 2. Environment variables: `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`. Redeploy after changing them, because Vite bakes them in at build time.
 3. In Supabase, go to **Authentication → URL Configuration** and set **Site URL** to your storefront domain, so confirmation emails link back to it.
 
